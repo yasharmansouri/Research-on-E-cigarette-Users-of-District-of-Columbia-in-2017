@@ -1,8 +1,6 @@
 <center><h2> Behavioral Risk Factor Surveillance System Survey</h2></center>  
 <center><h3> A Research on E-cigarette Users of District of Columbia  in 2017  </h3></center><br></br>
-<center><h4>Authors:</h4></center>
-
-<center><h4>Yashar Mansouri & Nasrin Khansari</h4></center>
+<center><h4>Yashar Mansouri</h4></center>
 
 # Φ. Introduction
 
@@ -131,35 +129,35 @@ Documentation can be found here: https://dev.socrata.com/foundry/chronicdata.cdc
 
 ### Dataset info
 
-**Number of variables**	17
+**Number of variables:**	17
 
-**Number of observations**	28598
+**Number of observations:**	28598
 
-**Missing cells**	17603 (3.6%)
+**Missing cells:**	17603 (3.6%)
 
-**Duplicate rows**	0 (0.0%)
+**Duplicate rows:**	0 (0.0%)
 
-**Total size in memory**	3.7 MiB
+**Total size in memory:**	3.7 MiB
 
-**Average record size in memory**	136.0 B
+**Average record size in memory:**	136.0 B
 
 ### Variables types
 
-**Numeric**	6
+**Numeric:**	6
 
-**Categorical**	9
+**Categorical:**	9
 
-**Boolean**	0
+**Boolean:**	0
 
-**Date**	0
+**Date:**	0
 
-**URL**	0
+**URL:**	0
 
-**Text (Unique)**	0
+**Text (Unique):**	0
 
-**Rejected**	2
+**Rejected:**	2
 
-**Unsupported**	0
+**Unsupported:**	0
 
 ### EDA Visualization 1: 
 Analysis of the genders and the data_value per each year from 2011 to 2017
