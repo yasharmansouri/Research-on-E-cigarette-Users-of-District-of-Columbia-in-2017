@@ -176,27 +176,24 @@ BRFSS questionnaires started including the e-cigs topic from 2016. Before this, 
 [BRFSS 2015 Questionnaire](https://www.cdc.gov/brfss/questionnaires/pdf-ques/2015-brfss-questionnaire-12-29-14.pdf)
 
 ### EDA Visualization 2  
+Looking for the disparity between the gender of e-cig users in 2017 in U.S.  
 
 ![fig2](figs/fig2.png)  
-
-Looking for the disparity between the gender of e-cig users in 2017 in U.S.
-
 Second visualization shows the median of the male e-cig users seems to be higher than in females in 2017 between all states.
 
-### EDA Visualizations 3
+### EDA Visualizations 3  
+Looking for the disparity of education in e-cig users in 2017 in U.S.  
 ![fig3](figs/fig3.png)  
-Looking for the disparity of education in e-cig users in 2017 in U.S.
-
 Comparing the groups of higher than 12 years of education and lower, shows a median difference of approximately 1 person in 100 in 2017 U.S. population.
 
-### EDA Visualization 4
-
+### EDA Visualization 4  
 Visualizing the age disparity of the E-cig users in U.S. in 2017
+![fig4](figs/fig4.png) 
 
-### EDA Visualization 5
 
+### EDA Visualization 5  
 Looking for the states with the highest and lowest percentage of e-cig users in U.S in 2017
-
+![fig5](figs/fig5.png)
 According to the report of [U.S News on Sep 30 2019](https://www.usnews.com/news/healthiest-communities/slideshows/which-states-vape-use-e-cigarettes-the-most?slide=12), the rankings are still the same:
     
 1. Oklahoma
@@ -210,6 +207,8 @@ According to the report of [U.S News on Sep 30 2019](https://www.usnews.com/news
 9. (tie) Colorado
 9. (tie) Ohio
 
+
+
 ### Hypotheses Subsets
 
 # II. Hypotheses Tests
@@ -220,23 +219,10 @@ Subsets of dataframe are created according to the hypotheses.
 
 Since the values are proportions between two samples, the z-score for proportion comparison is used.
 
-$$
-\begin{array}{c}{\mathrm(1-\alpha) 100 \% \text { confidence interval for }} \\ {p_{1}-p_{2} \text { is given by: }} \\\\ {\hat{p}_{1}-\hat{p}_{2} \pm z_{\alpha / 2} \times S E\left(\hat{p}_{1}-\hat{p}_{2}\right)}\end{array}\\\\
-$$
+![tests](figs/tests.png)
 
-$$
-\begin{aligned} Z &=\frac{(\hat{p_{A}}-\hat{p_{B}})-\left(p_{A}-p_{B}\right)}{S E\left(p_{A}-p_{B}\right)} =\frac{(\hat{p_{A}}-\hat{p_{B}})-0}{\sqrt{\hat{p}(1-\hat{p})\left(\frac{1}{n_{A}}+\frac{1}{n_{B}}\right)}} \end{aligned}\\
-$$
-
-$$
-\begin{array}{l}{\text { The sampling distribution of } \hat{p}_{1}-\hat{p}_{2}:} \\\\ {\text { 1- has a mean of } p_{1}-p_{2}} \\ {\text { 2- has a standard deviation of }} \\ {\qquad \sigma_{\hat{p}_{1}-\hat{p}_{2}}=\sqrt{\frac{p_{1}\left(1-p_{1}\right)}{n_{1}}+\frac{p_{2}\left(1-p_{2}\right)}{n_{2}}}} \\ {\text { 3- is approximately normal if the sample }} \\ {\text { sizes are large. }}\end{array}
-$$
-
-### Assumptions
-
-$$
-\begin{array}{l}{\text { The assumptions of the two sample }} \\ {\text { inference procedures on proportions: }} \\\\ {\text { * We have independent simple random }} \\ {\text { samples from the populations of }} \\ {\text { interest. }} \\\\ {\text { * The sample sizes are large enough for }} \\ {\text { the normal approximation to be }} \\ {\text { reasonable. }}\end{array}
-$$
+### Assumptions  
+![assumptions](figs/assumptions.png)
 
 
 
@@ -253,9 +239,7 @@ H0: Proportion of males and females are equal
 
 H1: Proportion of males are higher than females
 
-$$
-\begin{array}{l}{H_{0}: P_{m}=P_{f}} \\ {H_{1}: P_{m} \neq P_{f}}\end{array}
-$$
+![hyp1](figs/hyp1.png)
 
 #### Hypothesis II Test
 
@@ -265,9 +249,7 @@ H0: Proportion of the two age groups are equal
 
 H2: Proportions are different
 
-$$
-\begin{array}{l}{H_{0}: P_{y}=P_{o}} \\ {H_{2}: P_{y} \neq P_{o}}\end{array}
-$$
+![hyp2](figs/hyp2.png)
 
 #### Hypothesis III Test
 
@@ -277,9 +259,7 @@ H0: Proportion of the two education levels are equal
 
 H3: Proportions are different
 
-$$
-\begin{array}{l}{H_{0}: P_{h}=P_{L}} \\ {H_{3}: P_{h} \neq P_{L}}\end{array}
-$$
+![hyp3](figs/hyp3.png)
 
 # III. Results
 
@@ -289,5 +269,3 @@ In DC in 2017 population, out of every 100 people
 - **I**. 3 males and 1.7 females have been e-cig users  
 - **II**. 5.8    (18-24 years old) and    2.1    (25-44 years old) have been e-cig users    
 - **III**.  1.6  (higher than 12 year educated) and 3  (less than 12 year educated) were e –cig users
-
-
