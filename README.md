@@ -1,10 +1,12 @@
 <center><h2> Behavioral Risk Factor Surveillance System Survey</h2></center>  
 <center><h3> A Research on E-cigarette Users of District of Columbia in 2017  </h3></center><br></br>
-<center><h4>Yashar Mansouri</h4></center>
+<center><h3>Yashar Mansouri</h3></center>
 
 # Φ. Introduction
 
-notebook can be viewed on nbviewer: ``
+- Notebook can be accessed on nbviewer: [`brfss_dc_e_cig_use_2017.ipynb`](https://nbviewer.jupyter.org/github/YM88/Research-on-E-cigarette-Users-of-District-of-Columbia-in-2017/blob/master/brfss_dc_e_cig_use_2017.ipynb)  
+
+- Presentation file is located in the _presentation_ folder:['brfss_dc_e_cig_use_2017.pptx'](presentation/brfss_dc_e_cig_use_2017.pptx)
 
 ## Data Description & Resources
 
