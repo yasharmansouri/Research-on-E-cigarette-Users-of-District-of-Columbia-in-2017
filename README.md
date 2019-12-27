@@ -163,7 +163,7 @@ Analysis of the genders and the data_value per each year from 2011 to 2017
 
 Based on the analysis:  
 
-![fig1]('figs/fig1.png')  
+![fig1](figs/fig1.png)  
 
 **1**. Cigarette Users have the highest proportion of the U.S. population, however a decreasing pattern is visible between 2011-2017.
 
@@ -177,14 +177,14 @@ BRFSS questionnaires started including the e-cigs topic from 2016. Before this, 
 
 ### EDA Visualization 2  
 
-![fig2]('figs/fig2.png')  
+![fig2](figs/fig2.png)  
 
 Looking for the disparity between the gender of e-cig users in 2017 in U.S.
 
 Second visualization shows the median of the male e-cig users seems to be higher than in females in 2017 between all states.
 
 ### EDA Visualizations 3
-![fig3]('figs/fig3.png')  
+![fig3](figs/fig3.png)  
 Looking for the disparity of education in e-cig users in 2017 in U.S.
 
 Comparing the groups of higher than 12 years of education and lower, shows a median difference of approximately 1 person in 100 in 2017 U.S. population.
