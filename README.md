@@ -1,8 +1,10 @@
 <center><h2> Behavioral Risk Factor Surveillance System Survey</h2></center>  
-<center><h3> A Research on E-cigarette Users of District of Columbia  in 2017  </h3></center><br></br>
+<center><h3> A Research on E-cigarette Users of District of Columbia in 2017  </h3></center><br></br>
 <center><h4>Yashar Mansouri</h4></center>
 
 # Φ. Introduction
+
+notebook can be viewed on nbviewer: ``
 
 ## Data Description & Resources
 
@@ -40,8 +42,7 @@
 
 **Source Link**: http://www.cdc.gov/brfss/
 
-
-## A Quick Breif on Data
+## A Quick Brief on Data
 
 ### Source
 Behavioral Risk Factor Surveillance System Survey Data
@@ -51,7 +52,7 @@ The BRFSS is a continuous, state-based surveillance system that collects informa
 
 ### Sampling
 
-For 2011 data and forward, a random-digit dialing system was used to select samples of adults in households with landline or cellular telephones. The sample represented adults from each state who were civilian, aged 18 years or older and not institutionalized. Most states now use a computer-assisted telephone interviewing software program (CATI). This allows the interviewer to enter the data directly into a computer, thus reducing errors and eliminating unacceptable responses. More detailed information on the sampling methodology is located on the BRFSS website (http://www.cdc.gov/brfss/).
+For 2011 data and forward, a random digit dialing system was used to select samples of adults in households with landline or cellular telephones. The sample represented adults from each state who were civilian, aged 18 years or older and not institutionalized. Most states now use a computer-assisted telephone interviewing software program (CATI). This allows the interviewer to enter the data directly into a computer, thus reducing errors and eliminating unacceptable responses. More detailed information on the sampling methodology is located on the BRFSS website (http://www.cdc.gov/brfss/).
 
 ### Questionnaire
 
@@ -66,7 +67,6 @@ The core questions allow data to be compared between states. Because many of the
 **Notes**: "NA" indicates that survey data are not available. 
 
 **Citation**: Centers for Disease Control and Prevention (CDC). Behavioral Risk Factor Surveillance System Survey Data. Atlanta, Georgia: U.S. Department of Health and Human Services, Centers for Disease Control and Prevention, 2019. 
-
 
 ## Research Purpose & Abstract
 
@@ -98,10 +98,9 @@ Documentation can be found here: https://dev.socrata.com/foundry/chronicdata.cdc
 6. **'data_value_type'** is Percentage on all entries
 7. **'data_value_unit'** is % on all entries
 
-
 ### Dropping NA values
 
-- null values are dropped based on subsetting by **data_value** and  **sample_size**
+- null values are dropped based on subsetting by **data_value** and **sample_size**
 
 - null response values are kept due to including more than two-thirds of the data.
 
@@ -129,40 +128,42 @@ Documentation can be found here: https://dev.socrata.com/foundry/chronicdata.cdc
 
 ### Dataset info
 
-**Number of variables:**	17
+**Number of variables:**    17
 
-**Number of observations:**	28598
+**Number of observations:** 28598
 
-**Missing cells:**	17603 (3.6%)
+**Missing cells:**  17603 (3.6%)
 
-**Duplicate rows:**	0 (0.0%)
+**Duplicate rows:** 0 (0.0%)
 
-**Total size in memory:**	3.7 MiB
+**Total size in memory:**   3.7 MiB
 
-**Average record size in memory:**	136.0 B
+**Average record size in memory:**  136.0 B
 
 ### Variables types
 
-**Numeric:**	6
+**Numeric:**    6
 
-**Categorical:**	9
+**Categorical:**    9
 
-**Boolean:**	0
+**Boolean:**    0
 
-**Date:**	0
+**Date:**   0
 
-**URL:**	0
+**URL:**    0
 
-**Text (Unique):**	0
+**Text (Unique):**  0
 
-**Rejected:**	2
+**Rejected:**   2
 
-**Unsupported:**	0
+**Unsupported:**    0
 
 ### EDA Visualization 1: 
 Analysis of the genders and the data_value per each year from 2011 to 2017
 
-Based on the analysis:
+Based on the analysis:  
+
+![fig1]('figs/fig1.png')  
 
 **1**. Cigarette Users have the highest proportion of the U.S. population, however a decreasing pattern is visible between 2011-2017.
 
@@ -174,17 +175,19 @@ BRFSS questionnaires started including the e-cigs topic from 2016. Before this, 
 
 [BRFSS 2015 Questionnaire](https://www.cdc.gov/brfss/questionnaires/pdf-ques/2015-brfss-questionnaire-12-29-14.pdf)
 
-### EDA Visualization 2
+### EDA Visualization 2  
+
+![fig2]('figs/fig2.png')  
 
 Looking for the disparity between the gender of e-cig users in 2017 in U.S.
 
 Second visualization shows the median of the male e-cig users seems to be higher than in females in 2017 between all states.
 
 ### EDA Visualizations 3
-
+![fig3]('figs/fig3.png')  
 Looking for the disparity of education in e-cig users in 2017 in U.S.
 
-Comparing the groups of higher than 12 years of education and lower,  shows a median difference of approximately 1 person in 100 in 2017 U.S. population.
+Comparing the groups of higher than 12 years of education and lower, shows a median difference of approximately 1 person in 100 in 2017 U.S. population.
 
 ### EDA Visualization 4
 
@@ -209,7 +212,6 @@ According to the report of [U.S News on Sep 30 2019](https://www.usnews.com/news
 
 ### Hypotheses Subsets
 
-
 # II. Hypotheses Tests
 
 Subsets of dataframe are created according to the hypotheses.
@@ -226,7 +228,6 @@ $$
 \begin{aligned} Z &=\frac{(\hat{p_{A}}-\hat{p_{B}})-\left(p_{A}-p_{B}\right)}{S E\left(p_{A}-p_{B}\right)} =\frac{(\hat{p_{A}}-\hat{p_{B}})-0}{\sqrt{\hat{p}(1-\hat{p})\left(\frac{1}{n_{A}}+\frac{1}{n_{B}}\right)}} \end{aligned}\\
 $$
 
-
 $$
 \begin{array}{l}{\text { The sampling distribution of } \hat{p}_{1}-\hat{p}_{2}:} \\\\ {\text { 1- has a mean of } p_{1}-p_{2}} \\ {\text { 2- has a standard deviation of }} \\ {\qquad \sigma_{\hat{p}_{1}-\hat{p}_{2}}=\sqrt{\frac{p_{1}\left(1-p_{1}\right)}{n_{1}}+\frac{p_{2}\left(1-p_{2}\right)}{n_{2}}}} \\ {\text { 3- is approximately normal if the sample }} \\ {\text { sizes are large. }}\end{array}
 $$
@@ -240,18 +241,17 @@ $$
 
 
 
-
 $$
 \begin{array}{l}{H_{a}: p_{1}<p_{2}} \\ {H_{a}: p_{1}>p_{2}} \\ {H_{a}: p_{1} \neq p_{2} \leftarrow \text { Two-sided alternative }}\end{array}
 $$
 
 #### Hypothesis I Test
 
-Is there a significant difference between the gender and the the proportion of e-cig users in 2017 in DC ?
+Is there a significant difference between the gender and the the proportion of e-cig users in 2017 in DC?
 
-H0 : Proportion of males and females are equal
+H0: Proportion of males and females are equal
 
-H1 : Proportion of males are higher than females
+H1: Proportion of males are higher than females
 
 $$
 \begin{array}{l}{H_{0}: P_{m}=P_{f}} \\ {H_{1}: P_{m} \neq P_{f}}\end{array}
@@ -259,24 +259,23 @@ $$
 
 #### Hypothesis II Test
 
-Q:  Is there a significant difference between the age groups of 25-44 and 44-65 with the proportion of e-cig users in 2017 in DC ?
+Q:  Is there a significant difference between the age groups of 25-44 and 44-65 with the proportion of e-cig users in 2017 in DC?
 
-H0 : Proportion of the two age groups are equal
+H0: Proportion of the two age groups are equal
 
-H2 : Proportions are different
+H2: Proportions are different
 
 $$
 \begin{array}{l}{H_{0}: P_{y}=P_{o}} \\ {H_{2}: P_{y} \neq P_{o}}\end{array}
 $$
 
-
 #### Hypothesis III Test
 
-Q:  Is there a significant difference between proportion of e-cig users and their education level in 2017 in DC ?
+Q:  Is there a significant difference between proportion of e-cig users and their education level in 2017 in DC?
 
-H0 : Proportion of the two education levels are equal
+H0: Proportion of the two education levels are equal
 
-H3 : Proportions are different
+H3: Proportions are different
 
 $$
 \begin{array}{l}{H_{0}: P_{h}=P_{L}} \\ {H_{3}: P_{h} \neq P_{L}}\end{array}
@@ -287,6 +286,8 @@ $$
 There are significant disparities in all three categories of gender, age and education.
 
 In DC in 2017 population, out of every 100 people
-- **I**. 3 males and 1.7 females have been e-cig users	
-- **II**. 5.8    (18-24 years old) and    2.1    (25-44 years old) have been e-cig users	
+- **I**. 3 males and 1.7 females have been e-cig users  
+- **II**. 5.8    (18-24 years old) and    2.1    (25-44 years old) have been e-cig users    
 - **III**.  1.6  (higher than 12 year educated) and 3  (less than 12 year educated) were e –cig users
+
+
